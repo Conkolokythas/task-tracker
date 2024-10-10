@@ -18,7 +18,7 @@ const AddTask = ( {onAdd} ) => {
     setReminder(false)
   }
   return (
-    <form className='add-form' onSubmit={onSubmit}>
+    <form lang="en" className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
       <label>Task</label>
       <input type="text" placheholder="Add task"
@@ -26,9 +26,10 @@ const AddTask = ( {onAdd} ) => {
       onChange={(e) => setText(e.target.value)}/>
       </div>
 
+
       <div className='form-control'>
       <label>Day time</label>
-      <input type="text"
+      <input type="datetime-local"
       value={day}
       onChange={(e) => setDay(e.target.value)}/>
       </div>
